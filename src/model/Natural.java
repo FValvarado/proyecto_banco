@@ -22,11 +22,11 @@ public class Natural extends Cliente {
 			String perNombre, 
 			String perApePaterno, 
 			String perApeMaterno, 
-			String nacionalidad,
+			String perNacionalidad,
 			String perFecNacimiento, 
 			String cliCategoria, 
 			String natPatrimonio) {
-		super(perRut, perNombre, perApePaterno, perApeMaterno, nacionalidad, perFecNacimiento, cliCategoria);
+		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFecNacimiento, cliCategoria);
 		this.natPatrimonio = natPatrimonio;
 	}
 
@@ -45,7 +45,7 @@ public class Natural extends Cliente {
 	public String toString() {
 		return "Natural [natPatrimonio=" + natPatrimonio + ", cliCategoria=" + cliCategoria + ", perRut=" + perRut
 				+ ", perNombre=" + perNombre + ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno
-				+ ", Nacionalidad=" + Nacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
+				+ ", perNacionalidad=" + perNacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
 	}
 	
 

@@ -24,9 +24,9 @@ public class Cuenta extends Cliente{
 	/**
 	 * @param perRut
 	 */
-	public Cuenta(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String nacionalidad,String perFecNacimiento, String cliCategoria, int cueId, int cueSaldo, String cueFecApertura,
+	public Cuenta(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String perNacionalidad,String perFecNacimiento, String cliCategoria, int cueId, int cueSaldo, String cueFecApertura,
 			String cueEstado, int cueSobregiro, String cliente) {
-		super(perRut, perNombre, perApePaterno, perApeMaterno, nacionalidad, perFecNacimiento, cliCategoria);
+		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFecNacimiento, cliCategoria);
 		this.cueId = cueId;
 		this.cueSaldo = cueSaldo;
 		this.cueFecApertura = cueFecApertura;
@@ -83,15 +83,19 @@ public class Cuenta extends Cliente{
 		this.cliente = cliente;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "Cuenta [cueId=" + cueId + ", cueSaldo=" + cueSaldo + ", cueFecApertura=" + cueFecApertura
-				+ ", cueEstado=" + cueEstado + ", cueSobregiro=" + cueSobregiro + ", cliente=" + cliente + "]";
+				+ ", cueEstado=" + cueEstado + ", cueSobregiro=" + cueSobregiro + ", cliente=" + cliente
+				+ ", cliCategoria=" + cliCategoria + ", perRut=" + perRut + ", perNombre=" + perNombre
+				+ ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno + ", perNacionalidad="
+				+ perNacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
 	}
-	
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+
 	
 	
 	

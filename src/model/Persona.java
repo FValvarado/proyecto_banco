@@ -13,7 +13,7 @@ public abstract class Persona {
 	protected String perNombre;
 	protected String perApePaterno;
 	protected String perApeMaterno;
-	protected String Nacionalidad;
+	protected String perNacionalidad;
 	protected String perFecNacimiento;
 	/**
 	 * Constructor vacio
@@ -34,7 +34,7 @@ public abstract class Persona {
 		this.perNombre = perNombre;
 		this.perApePaterno = perApePaterno;
 		this.perApeMaterno = perApeMaterno;
-		this.Nacionalidad = nacionalidad;
+		this.perNacionalidad = nacionalidad;
 		this.perFecNacimiento = perFecNacimiento;
 	}
 	
@@ -62,11 +62,11 @@ public abstract class Persona {
 	public void setPerApeMaterno(String perApeMaterno) {
 		this.perApeMaterno = perApeMaterno;
 	}
-	public String getNacionalidad() {
-		return Nacionalidad;
+	public String getPerNacionalidad() {
+		return perNacionalidad;
 	}
-	public void setNacionalidad(String nacionalidad) {
-		Nacionalidad = nacionalidad;
+	public void setPerNacionalidad(String nacionalidad) {
+		perNacionalidad = nacionalidad;
 	}
 	public String getPerFecNacimiento() {
 		return perFecNacimiento;
@@ -80,7 +80,7 @@ public abstract class Persona {
 	@Override
 	public String toString() {
 		return "Persona [perRut=" + perRut + ", perNombre=" + perNombre + ", perApePaterno=" + perApePaterno
-				+ ", perApeMaterno=" + perApeMaterno + ", Nacionalidad=" + Nacionalidad + ", perFecNacimiento="
+				+ ", perApeMaterno=" + perApeMaterno + ", perNacionalidad=" + perNacionalidad + ", perFecNacimiento="
 				+ perFecNacimiento + "]";
 	}
 	

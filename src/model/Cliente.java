@@ -22,12 +22,12 @@ public abstract class Cliente extends Persona {
 	 * @param perNombre
 	 * @param perApePaterno
 	 * @param perApeMaterno
-	 * @param nacionalidad
+	 * @param perNacionalidad
 	 * @param perFecNacimiento
 	 * @param cliCategoria
 	 */
-	public Cliente(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String nacionalidad,String perFecNacimiento, String cliCategoria) {
-		super(perRut, perNombre, perApePaterno, perApeMaterno, nacionalidad, perFecNacimiento);
+	public Cliente(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String perNacionalidad,String perFecNacimiento, String cliCategoria) {
+		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFecNacimiento);
 		this.cliCategoria = cliCategoria;
 	}
 
@@ -45,8 +45,8 @@ public abstract class Cliente extends Persona {
 	@Override
 	public String toString() {
 		return "Cliente [cliCategoria=" + cliCategoria + ", perRut=" + perRut + ", perNombre=" + perNombre
-				+ ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno + ", Nacionalidad="
-				+ Nacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
+				+ ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno + ", perNacionalidad="
+				+ perNacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
 	}
 	
 	

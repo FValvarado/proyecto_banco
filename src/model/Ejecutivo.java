@@ -19,9 +19,9 @@ public class Ejecutivo extends Persona {
 	/**
 	 * Se obtienen los valores de la clase persona
 	 */
-	public Ejecutivo(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String nacionalidad,
+	public Ejecutivo(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String perNacionalidad,
 			String perFecNacimiento, String ejeFecContrato) {
-		super(perRut, perNombre, perApePaterno, perApeMaterno, nacionalidad, perFecNacimiento);
+		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFecNacimiento);
 		this.ejeFecContrato = ejeFecContrato;
 	}
 
@@ -39,8 +39,8 @@ public class Ejecutivo extends Persona {
 	@Override
 	public String toString() {
 		return "Ejecutivo [ejeFecContrato=" + ejeFecContrato + ", perRut=" + perRut + ", perNombre=" + perNombre
-				+ ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno + ", Nacionalidad="
-				+ Nacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
+				+ ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno + ", perNacionalidad="
+				+ perNacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
 	}
 	
 	
