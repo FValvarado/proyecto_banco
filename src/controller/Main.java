@@ -1,21 +1,10 @@
-/**
- * 
- */
 package controller;
 
 /**
- * @author PC
- *
+ * @author Francisco Valdés
  */
 public class Main {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		Interfaz.init(null);
-
-
-	}
+	public static void main(String[] args) {	Interfaz.init(args); }	//Inicializamos!
 
 }

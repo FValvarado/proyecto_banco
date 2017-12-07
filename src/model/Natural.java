@@ -1,41 +1,62 @@
-/**
- * 
- */
 package model;
 
 /**
  * @author Francisco Valdés
- *
  */
 public class Natural extends Cliente {
-	private String natPatrimonio;
+	private int natPatrimonio;
 
 	/**
 	 * Constructor Vacio
 	 */
-	public Natural() {	}
+	public Natural() { super();	}
 
-	/**
-	 * Se obtienen los valores de la clase persona
-	 */
-	public Natural(String perRut, 
-			String perNombre, 
-			String perApePaterno, 
-			String perApeMaterno, 
-			String perNacionalidad,
-			String perFecNacimiento, 
-			String cliCategoria, 
-			String natPatrimonio) {
-		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFecNacimiento, cliCategoria);
+	public Natural(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String perNacionalidad,
+			String perFecNacimiento, String cliCategoria, Ejecutivo eje, int natPatrimonio) {
+		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFecNacimiento, cliCategoria, eje);
 		this.natPatrimonio = natPatrimonio;
 	}
 
-	public String getNatPatrimonio() {
+	public int getNatPatrimonio() {
 		return natPatrimonio;
 	}
 
-	public void setNatPatrimonio(String natPatrimonio) {
+	public void setNatPatrimonio(int natPatrimonio) {
 		this.natPatrimonio = natPatrimonio;
+	}
+
+	
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + natPatrimonio;
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Natural other = (Natural) obj;
+		if (perRut == null) {
+			if (other.perRut != null)
+				return false;
+		} else if (!perRut.equals(other.perRut))
+			return false;
+		return true;
+
 	}
 
 	/* (non-Javadoc)
@@ -43,10 +64,21 @@ public class Natural extends Cliente {
 	 */
 	@Override
 	public String toString() {
-		return "Natural [natPatrimonio=" + natPatrimonio + ", cliCategoria=" + cliCategoria + ", perRut=" + perRut
-				+ ", perNombre=" + perNombre + ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno
-				+ ", perNacionalidad=" + perNacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
+		return "\nCLIENTE NATURAL ID°" + perRut + 
+				"\nNOMBRE = " + perNombre + 
+				"\nAPELLIDOS = " + perApePaterno + perApeMaterno +
+				"\nNACIONALIDAD = " + perNacionalidad +
+				"\nCATEGORIA = " +cliCategoria + 
+				"\nFECHA DE NACIMIENTO = " + perFecNacimiento +
+				"\nPATRIMONIO = " +natPatrimonio +
+				"\nEJECUTIVO A CARGO = " + eje.getPerRut() +
+				"\n____________________________________" ;
 	}
+
+
+
+	
+
 	
 
 }

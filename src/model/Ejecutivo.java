@@ -1,6 +1,3 @@
-/**
- * 
- */
 package model;
 
 /**
@@ -38,11 +35,13 @@ public class Ejecutivo extends Persona {
 	 */
 	@Override
 	public String toString() {
-		return "Ejecutivo [ejeFecContrato=" + ejeFecContrato + ", perRut=" + perRut + ", perNombre=" + perNombre
-				+ ", perApePaterno=" + perApePaterno + ", perApeMaterno=" + perApeMaterno + ", perNacionalidad="
-				+ perNacionalidad + ", perFecNacimiento=" + perFecNacimiento + "]";
+		return "\nEJECUTIVO ID°" + perRut + 
+				"\nNOMBRE = " + perNombre + 
+				"\nAPELLIDOS = " + perApePaterno + perApeMaterno +
+				"\nNACIONALIDAD = " + perNacionalidad +
+				"\nFECHA DE NACIMIENTO = " + perFecNacimiento +
+				"\nFECHA DE CONTRATO = " + ejeFecContrato +
+				"\n____________________________________" ;
 	}
-	
-	
 
 }
